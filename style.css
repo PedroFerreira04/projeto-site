@@ -22,6 +22,7 @@
 body{
     background-color: var(--fundo);
     margin-top: 8rem;
+     overflow-x: hidden;
 }
 
 section{
@@ -93,12 +94,15 @@ section{
     background: url(imagens/home-img2.jpg);
     background-size: cover;
     background-position: center center;
+    padding-top: 10rem;
+
 }
 
 .home-conteudo section{
     display: flex;
     align-items: center;
     min-height: 100vh;
+    max-width: 100%;    
 }
 
 .conteudo{
