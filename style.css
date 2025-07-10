@@ -105,6 +105,7 @@ section{
 }
 
 .conteudo h3{
+    margin-top: 6rem;
     color: white;
     font-size: 6rem;
 }
@@ -123,6 +124,7 @@ section{
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 4rem;
+    text-decoration: underline;
 }
 
 .titulo span{
@@ -144,13 +146,124 @@ section{
 }
 
 .sobre .linha .conteudo h3{
-    font-size: 3rem;
+    font-size: 2.6rem;
     color: white;
 }
 
 .sobre .linha .conteudo p{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: white;
     padding: 1rem 0;
     line-height: 1.8;
+}
+
+.caixa-conteudo{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .caixa-conteudo .caixa{
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+    cursor: pointer;
+}
+
+.menu .caixa-conteudo .caixa img{
+    height: 10rem;
+}
+
+.menu .caixa-conteudo .caixa h3{
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .caixa-conteudo .caixa .Preço{
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem 0;
+}
+
+.menu .caixa-conteudo .caixa .Preço span{
+    font-size: 1.4REM;
+    text-decoration: line-through;
+
+}
+
+.menu .caixa-conteudo .caixa:hover{
+    background-color: white;
+    transition: 0.5s linear;
+}
+
+.menu .caixa-conteudo .caixa:hover>*{
+    color: var(--black);
+}
+
+.avaliação .caixa-conteudo .caixa{
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.avaliação .caixa-conteudo .caixa p{
+    color: white;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    line-height: 1.8;
+}
+
+.avaliação .caixa-conteudo .caixa .fotos{
+    height: 9rem;
+    width: 9rem;
+    border-radius: 40px;
+}
+
+.avaliação .caixa-conteudo .caixa h3{
+    color: white;
+    font-size: 2.5rem;
+    padding: 1.5rem;
+}
+
+.endereço {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer{
+    text-align: center;
+}
+
+.footer .share{
+    padding: 1rem 0;
+
+}
+
+.footer .share img{
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.footer .share img:hover{
+    background-color: var(--main-color);
+}
+
+@media (max-width: 768px) {
+    .sobre .linha {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre .linha .imagem img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sobre .linha .conteudo {
+        padding: 1rem;
+    }
 }
