@@ -35,6 +35,8 @@ section{
     left: 0;
     right: 0;
     border-bottom: var(--border);
+    z-index: 99;
+    background-color: var(--fundo);
 }
 
 .cabeçario section{
@@ -67,4 +69,88 @@ section{
 .icons img:hover{
     width: 40px;
     height: 40px;
+}
+
+.btn{
+    background: var(--main-color);
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.btn:hover{
+    background: #7b6447;
+    letter-spacing: 0.1rem;
+
+}
+
+.home-conteudo{
+    background: url(imagens/home-img2.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.home-conteudo section{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.conteudo{
+    max-width: 60rem;
+}
+
+.conteudo h3{
+    color: white;
+    font-size: 6rem;
+}
+
+.conteudo p{
+    color: white;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.titulo{
+    font-size: 4rem;
+    color: var(--main-color);
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 4rem;
+}
+
+.titulo span{
+    font-size: 4rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.sobre .linha{
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    gap: 1.8rem;
+
+}
+
+.sobre .linha .conteudo{
+    padding: 2rem;
+}
+
+.sobre .linha .conteudo h3{
+    font-size: 3rem;
+    color: white;
+}
+
+.sobre .linha .conteudo p{
+    font-size: 1.6rem;
+    color: white;
+    padding: 1rem 0;
+    line-height: 1.8;
 }
